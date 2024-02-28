@@ -28,9 +28,26 @@ header {
   height: 100%;
 }
 
-nav > ul{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  border-right: 2px dotted black;
+  margin: 0px 1rem;
+  list-style-type: none;
+}
