@@ -33,7 +33,7 @@ nav {
   align-items: center;
 }
 
-nav > ul {
+.nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@ a:hover {
   cursor: pointer;
 }
 
-li::after {
+.nav-list > li::after {
   content: "";
   position: absolute;
   width: 1px;
