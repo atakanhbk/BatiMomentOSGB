@@ -166,6 +166,13 @@ a:hover {
   border-radius: 15px;
   overflow: hidden;
 }
+
+.online-process > h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 .card-explanation {
   display: flex;
   justify-content: center;
