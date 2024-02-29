@@ -65,3 +65,40 @@ li::after {
   margin: 0px 1rem;
   list-style-type: none;
 }
+
+.showcase-slider-photos > img {
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: 3;
+}
+
+.showcase-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.showcase-slider-photos {
+  display: flex;
+  transition: 2s;
+  align-items: end;
+}
+
+.slider-move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid rgba(101, 68, 61, 0.3);
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(101, 68, 61, 0.3);
+}
+
+.slider-move-left,
+.slider-move-right {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 0px;
+  background-color: transparent;
+  color: rgb(101, 68, 61, 0.8);
+  cursor: pointer;
+}

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bati Moment OSGB</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css"
+    rel="stylesheet"
+  />
   </head>
   <body>
     <div class="container">
@@ -20,6 +28,40 @@
           </ul>
         </nav>
       </header>
+      <main>
+        <section id="showcase-photos">
+          <div class="showcase-slider">
+            <div class="showcase-slider-photos">
+              <img src="./images/place1.jpg" />
+              <div class="darkness-effect">
+                <div class="darkness-effect-text">
+                  <h1>Marin Fırın Cafe</h1>
+                  <span
+                    >Lezzetin doruklarına yolculuk yapın! Sıcacık fırın
+                    ürünlerimizle keyifli bir molaya davetlisiniz. Tatlı ve
+                    tuzlu lezzetlerin buluştuğu kafe atmosferimizde unutulmaz
+                    bir deneyim sizi bekliyor!</span
+                  >
+                </div>
+              </div>
+              <img src="./images/place2.jpg" />
+              <img src="./images/place3.jpg" />
+              <img src="./images/place4.jpg" />
+            </div>
+            <div class="slider-move">
+              <button class="slider-move-left" type="button">
+                <i class="gg-arrow-left"></i>
+              </button>
+              <div class="slider-counter"><span>1 / 4</span></div>
+              <button class="slider-move-right" type="button">
+                <i class="gg-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
