@@ -18,6 +18,94 @@ header {
   justify-content: space-around;
 }
 
+.header-upline{
+  width: 100%;
+  height: 50px;
+  background-color: #2FACFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__icons {
+  display: flex;
+  gap: 10px;
+}
+
+li > a {
+  color: rgb(101, 68, 61);
+  text-decoration: none;
+}
+
+.instagram__icon > a,.x__icon > a,.facebook__icon > a{
+  width: 20px;
+}
+
+.header__icons > div {
+  border-radius: 50%;
+  background: white;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.instagram__icon:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  transform: scale(1.25);
+}
+
+hr {
+  transform: translateY(-15px);
+  opacity: 0;
+  transition: 0.5s;
+  border: 1px solid;
+  position: absolute;
+  width: 100%;
+}
+
+ul {
+  padding: 0px;
+}
+
+.header__inline-menu > ul > li:hover > hr {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.x__icon:hover {
+  background-color: black;
+  transform: scale(1.25);
+}
+
+.facebook__icon:hover {
+  background-color: #3b5998;
+  transform: scale(1.25);
+}
+
+.header__icons > div:hover > a {
+  color: white;
+}
+.header__icons > div > a {
+  display: flex;
+}
+
+
 .logo {
   display: inline-block;
   height: 100%;
