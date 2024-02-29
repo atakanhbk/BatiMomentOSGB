@@ -57,10 +57,11 @@ li > a {
   text-decoration: none;
 }
 
-.instagram__icon > a,
-.x__icon > a,
-.facebook__icon > a {
+.instagram__icon > a > svg,
+.x__icon > a > svg,
+.facebook__icon > a > svg{
   width: 20px;
+  padding: 0px;
 }
 
 .header__icons > div {
