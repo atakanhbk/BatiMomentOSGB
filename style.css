@@ -27,15 +27,22 @@ header {
   align-items: center;
 }
 
-.bi-telephone-fill {
-  padding: 0px 0.5rem;
+.bi {
+  padding: 0px 0.5rem 0px 1rem;
 }
 
-.header-telephone {
+strong{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.header-telephone, .header-mail {
   text-decoration: none;
 }
 
-.header-telephone:hover {
+.header-telephone:hover,.header-mail:hover {
   text-decoration: underline;
   text-decoration-color: blue;
 }
