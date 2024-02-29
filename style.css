@@ -23,9 +23,16 @@ header {
   height: 50px;
   background-color: #2FACFF;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
+
+
+
+.bi-telephone-fill{
+ color: white;
+}
+
 
 .header__icons {
   display: flex;
