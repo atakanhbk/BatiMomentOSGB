@@ -135,3 +135,34 @@ a:hover {
   background-color: black;
   opacity: 0.5;
 }
+
+.online-process {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.online-process-list {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.online-process-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card-explanation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
