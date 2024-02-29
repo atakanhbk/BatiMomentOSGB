@@ -74,7 +74,9 @@ a:hover {
 .showcase-slider {
   position: relative;
   overflow: hidden;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 3;
 }
 
 .showcase-slider-photos {
@@ -145,10 +147,18 @@ a:hover {
   align-items: center;
 }
 
-.online-process-list {
+.online-process > ul {
   display: flex;
   gap: 5rem;
   list-style: none;
+  padding: 0px;
+}
+
+.online-process-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .online-process-card {
