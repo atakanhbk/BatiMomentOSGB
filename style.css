@@ -6,7 +6,6 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: red;
 }
 
 header {
@@ -47,7 +46,7 @@ a {
   text-decoration: none;
   font-family: sans-serif;
   font-weight: bold;
-  color: #58617B;
+  color: #58617b;
 }
 
 a:hover {
@@ -75,12 +74,14 @@ li::after {
 .showcase-slider {
   position: relative;
   overflow: hidden;
+  height: 600px;
 }
 
 .showcase-slider-photos {
   display: flex;
   transition: 2s;
   align-items: end;
+  height: 100%;
 }
 
 .slider-move {
@@ -101,4 +102,36 @@ li::after {
   background-color: transparent;
   color: rgb(101, 68, 61, 0.8);
   cursor: pointer;
+}
+
+.first-slider-photo,
+.second-slider-photo,
+.third-slider-photo {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  aspect-ratio: 3;
+}
+
+.first-slider-photo {
+  background-image: url(https://eforosgb.com/wp-content/uploads/2022/02/Is-guvenligi-Uzmani-copy.jpg);
+}
+
+.second-slider-photo {
+  background-image: url(https://lh3.googleusercontent.com/proxy/XyNn0_42bFGvyqop3_WAXL219mmut5Brf5q0FBQFMxUEjnHcX1CUzN8JZCELHl9a0X5fd6UW-nHo_6Bq5JtaMGpraZmx8qbjiDYo);
+}
+
+.third-slider-photo {
+  background-image: url(https://sbf.bingol.edu.tr/media/1411/is-guvenligi-sanal-santiye.png);
+}
+
+.darkness-effect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.5;
 }
