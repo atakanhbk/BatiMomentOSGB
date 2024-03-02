@@ -167,6 +167,7 @@ nav {
   font-family: sans-serif;
   font-weight: bold;
   color: #58617b;
+  transition: 0.3s;
 }
 
 .nav-list > li > a:hover {
@@ -217,7 +218,7 @@ nav {
 .showcase-slider > strong > h1 {
   margin: 0px;
   color: lightskyblue;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .showcase-slider-photos {

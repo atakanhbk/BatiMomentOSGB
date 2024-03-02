@@ -2,6 +2,19 @@ const leftSlider = document.getElementsByClassName("left-slider")[0];
 const rightSlider = document.getElementsByClassName("right-slider")[0];
 const sliderPhoto = document.getElementsByClassName("slider-photo")[0];
 
+const menuItems = document.querySelectorAll(".page");
+
+document.addEventListener("DOMContentLoaded", function () {
+  var currentPage = window.location.href;
+
+  menuItems.forEach(function (link) {
+    if (link.href === currentPage) {
+      link.style.color = "#00ccff";
+    }
+  });
+});
+// aria-current="page"
+
 let currentSlide = 0;
 
 const imagesUrl = [
@@ -43,7 +56,7 @@ let changeableTitleListCounter = 0;
 const changeTitleFunction = (callback) => {
   setInterval(() => {
     callback(decraseOpacity(changeChangeableTitle));
-  }, 5000);
+  }, 4000);
 };
 
 const decraseOpacity = (callback) => {
@@ -53,7 +66,7 @@ const decraseOpacity = (callback) => {
     if (typeof callback === "function") {
       callback(changeChangeableTitle);
     }
-  }, 1000);
+  }, 500);
 };
 
 const changeChangeableTitle = () => {
