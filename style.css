@@ -185,6 +185,10 @@ a:hover {
   list-style-type: none;
 }
 
+#showcase-photos{
+  position: relative;
+}
+
 .showcase-slider-photos > img {
   height: auto;
   max-width: 100%;
@@ -192,7 +196,6 @@ a:hover {
 }
 
 .showcase-slider {
-  position: relative;
   overflow: hidden;
   max-width: 100%;
   height: auto;
@@ -206,25 +209,7 @@ a:hover {
   height: 100%;
 }
 
-.slider-move {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  border-bottom: 1px solid rgba(101, 68, 61, 0.3);
-  margin-top: 1.5rem;
-  border-top: 1px solid rgba(101, 68, 61, 0.3);
-}
 
-.slider-move-left,
-.slider-move-right {
-  font-size: 1.5rem;
-  border-radius: 50%;
-  border: 0px;
-  background-color: transparent;
-  color: rgb(101, 68, 61, 0.8);
-  cursor: pointer;
-}
 
 .first-slider-photo,
 .second-slider-photo,
@@ -242,11 +227,27 @@ a:hover {
 }
 
 .second-slider-photo {
-  background-image: url(https://lh3.googleusercontent.com/proxy/XyNn0_42bFGvyqop3_WAXL219mmut5Brf5q0FBQFMxUEjnHcX1CUzN8JZCELHl9a0X5fd6UW-nHo_6Bq5JtaMGpraZmx8qbjiDYo);
+  background-image: url(https://www.tamekipman.com/wp-content/uploads/2022/06/mobil-yatay-yas%CC%A7am-hatti.jpeg);
 }
 
 .third-slider-photo {
   background-image: url(https://sbf.bingol.edu.tr/media/1411/is-guvenligi-sanal-santiye.png);
+}
+
+.slider-move{
+  position: absolute;
+  width: 100%;
+
+  bottom: 0px;
+}
+
+.left-slider{
+  display: inline-block;
+}
+
+.right-slider{
+  display: inline-block;
+  transform: rotate(180deg);
 }
 
 .darkness-effect {
