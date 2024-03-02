@@ -48,20 +48,22 @@ const changeTitleFunction = (callback) => {
 
 const decraseOpacity = (callback) => {
   changeableTitle.style.opacity = 0;
- 
+  changeableTitle.style.transform = "translateY(50px)";
   setTimeout(() => {
-    callback()
+    if (typeof callback === "function") {
+      callback(changeChangeableTitle);
+    }
   }, 1000);
-}
-
+};
 
 const changeChangeableTitle = () => {
-    changeableTitleListCounter++;
+  changeableTitleListCounter++;
 
-    if (changeableTitleListCounter >= changeableTitleList.length) {
-      changeableTitleListCounter = 0;
-    }
-    changeableTitle.textContent = `${changeableTitleList[changeableTitleListCounter]}`;
-    changeableTitle.style.opacity = 1;
-}
+  if (changeableTitleListCounter >= changeableTitleList.length) {
+    changeableTitleListCounter = 0;
+  }
+  changeableTitle.textContent = `${changeableTitleList[changeableTitleListCounter]}`;
+  changeableTitle.style.transform = "translateY(0px)";
+  changeableTitle.style.opacity = 1;
+};
 changeTitleFunction(decraseOpacity);

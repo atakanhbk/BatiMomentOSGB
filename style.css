@@ -212,18 +212,13 @@ nav {
   margin: 0px;
   width: 100%;
   text-align: center;
- 
 }
 
-
-.showcase-slider > strong > h1{
+.showcase-slider > strong > h1 {
   margin: 0px;
-  color:lightskyblue;
+  color: lightskyblue;
   transition: 1s;
 }
-
-
-
 
 .showcase-slider-photos {
   display: flex;
@@ -302,7 +297,7 @@ nav {
   align-items: center;
 }
 
-.online-process > h1{
+.online-process > h1 {
   margin: 2.5rem 0px;
 }
 
