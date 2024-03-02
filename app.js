@@ -29,3 +29,39 @@ const moveSliderAutomatic = () => {
 // moveSliderAutomatic();
 leftSlider.addEventListener("click", clickedLeftArrow);
 rightSlider.addEventListener("click", clickedRightArrow);
+
+const changeableTitle = document.getElementsByClassName("changeable-title")[0];
+
+const changeableTitleList = [
+  "Yürümenin",
+  "Başarmanın",
+  "İnanmanın",
+  "Gelişmenin",
+];
+let changeableTitleListCounter = 0;
+
+const changeTitleFunction = (callback) => {
+  setInterval(() => {
+    callback(decraseOpacity(changeChangeableTitle));
+  }, 5000);
+};
+
+const decraseOpacity = (callback) => {
+  changeableTitle.style.opacity = 0;
+ 
+  setTimeout(() => {
+    callback()
+  }, 1000);
+}
+
+
+const changeChangeableTitle = () => {
+    changeableTitleListCounter++;
+
+    if (changeableTitleListCounter >= changeableTitleList.length) {
+      changeableTitleListCounter = 0;
+    }
+    changeableTitle.textContent = `${changeableTitleList[changeableTitleListCounter]}`;
+    changeableTitle.style.opacity = 1;
+}
+changeTitleFunction(decraseOpacity);
