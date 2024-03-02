@@ -20,5 +20,12 @@ const clickedRightArrow = () => {
   sliderPhoto.style.backgroundImage = `url("${imagesUrl[currentSlide]}")`;
 };
 
+const moveSliderAutomatic = () => {
+  setInterval(() => {
+    clickedRightArrow();
+  }, 10000);
+};
+
+moveSliderAutomatic();
 leftSlider.addEventListener("click", clickedLeftArrow);
 rightSlider.addEventListener("click", clickedRightArrow);
