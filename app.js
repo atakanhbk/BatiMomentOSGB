@@ -23,10 +23,10 @@ const clickedRightArrow = () => {
 const moveSliderAutomatic = () => {
   setInterval(() => {
     clickedRightArrow();
-  }, 10000);
+  }, 7000);
 };
 
-// moveSliderAutomatic();
+moveSliderAutomatic();
 leftSlider.addEventListener("click", clickedLeftArrow);
 rightSlider.addEventListener("click", clickedRightArrow);
 

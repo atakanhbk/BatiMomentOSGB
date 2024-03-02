@@ -285,7 +285,7 @@ nav {
   position: absolute;
   top: 0;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .online-process {
@@ -338,7 +338,7 @@ nav {
 
 .online-process-card:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale: 1.02;
   border: 1px solid gray;
 }
 
