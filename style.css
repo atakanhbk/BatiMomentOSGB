@@ -209,9 +209,8 @@ a:hover {
   height: 100%;
 }
 
-.first-slider-photo,
-.second-slider-photo,
-.third-slider-photo {
+.slider-photo
+ {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -220,17 +219,11 @@ a:hover {
   aspect-ratio: 3;
 }
 
-.first-slider-photo {
+.slider-photo {
   background-image: url(https://eforosgb.com/wp-content/uploads/2022/02/Is-guvenligi-Uzmani-copy.jpg);
 }
 
-.second-slider-photo {
-  background-image: url(https://www.tamekipman.com/wp-content/uploads/2022/06/mobil-yatay-yas%CC%A7am-hatti.jpeg);
-}
 
-.third-slider-photo {
-  background-image: url(https://sbf.bingol.edu.tr/media/1411/is-guvenligi-sanal-santiye.png);
-}
 
 .slider-move {
   position: absolute;
@@ -262,6 +255,8 @@ a:hover {
 .right-slider > button > img:hover {
   opacity: 0.9;
 }
+
+
 
 .darkness-effect {
   width: 100%;
