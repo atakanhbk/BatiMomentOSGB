@@ -185,7 +185,7 @@ a:hover {
   list-style-type: none;
 }
 
-#showcase-photos{
+#showcase-photos {
   position: relative;
 }
 
@@ -208,8 +208,6 @@ a:hover {
   align-items: end;
   height: 100%;
 }
-
-
 
 .first-slider-photo,
 .second-slider-photo,
@@ -234,20 +232,35 @@ a:hover {
   background-image: url(https://sbf.bingol.edu.tr/media/1411/is-guvenligi-sanal-santiye.png);
 }
 
-.slider-move{
+.slider-move {
   position: absolute;
   width: 100%;
-
-  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  bottom: 0.5rem;
 }
 
-.left-slider{
+.left-slider {
   display: inline-block;
 }
 
-.right-slider{
+.right-slider {
   display: inline-block;
   transform: rotate(180deg);
+}
+
+.left-slider > button,
+.right-slider > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.left-slider > button > img:hover,
+.right-slider > button > img:hover {
+  opacity: 0.9;
 }
 
 .darkness-effect {
