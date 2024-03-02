@@ -28,8 +28,7 @@ header {
   align-items: center;
 }
 
-
-.sticky-menu{
+.sticky-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -48,7 +47,6 @@ header {
     transform: translateY(0);
   }
 }
-
 
 .bi {
   padding: 0px 0.5rem 0px 1rem;
