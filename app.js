@@ -1,6 +1,8 @@
 const leftSlider = document.getElementsByClassName("left-slider")[0];
 const rightSlider = document.getElementsByClassName("right-slider")[0];
 const sliderPhoto = document.getElementsByClassName("slider-photo")[0];
+const header = document.querySelector('header');
+
 
 const menuItems = document.querySelectorAll(".page");
 
@@ -80,3 +82,16 @@ const changeChangeableTitle = () => {
   changeableTitle.style.opacity = 1;
 };
 changeTitleFunction(decraseOpacity);
+
+
+
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 150) {
+    header.classList.add("sticky-menu");
+  
+  } else {
+    header.classList.remove("sticky-menu");
+  }
+});
