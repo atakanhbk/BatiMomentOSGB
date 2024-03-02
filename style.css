@@ -202,6 +202,29 @@ nav {
   aspect-ratio: 3;
 }
 
+.showcase-slider > strong {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4vw;
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+ 
+}
+
+
+.showcase-slider > strong > h1{
+  margin: 0px;
+  color:lightskyblue;
+  transition: 2s;
+}
+
+
+
+
 .showcase-slider-photos {
   display: flex;
   transition: 2s;

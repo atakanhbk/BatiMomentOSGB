@@ -26,6 +26,6 @@ const moveSliderAutomatic = () => {
   }, 10000);
 };
 
-moveSliderAutomatic();
+// moveSliderAutomatic();
 leftSlider.addEventListener("click", clickedLeftArrow);
 rightSlider.addEventListener("click", clickedRightArrow);
