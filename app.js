@@ -1,8 +1,7 @@
 const leftSlider = document.getElementsByClassName("left-slider")[0];
 const rightSlider = document.getElementsByClassName("right-slider")[0];
 const sliderPhoto = document.getElementsByClassName("slider-photo")[0];
-const header = document.querySelector('header');
-
+const header = document.querySelector("header");
 
 const menuItems = document.querySelectorAll(".page");
 
@@ -83,15 +82,41 @@ const changeChangeableTitle = () => {
 };
 changeTitleFunction(decraseOpacity);
 
-
-
-window.addEventListener('scroll', function() {
+window.addEventListener("scroll", function () {
   var scrollPosition = window.scrollY;
 
   if (scrollPosition > 150) {
     header.classList.add("sticky-menu");
-  
   } else {
     header.classList.remove("sticky-menu");
   }
 });
+
+var companyLogos = document.getElementsByClassName("company-logos")[0];
+var images = document.querySelectorAll(".company-logos img");
+
+// Görsellerin toplam sayısını al
+var totalImages = images.length;
+
+// Hareket hızı (pixel/saniye)
+var speed = 1;
+
+// Başlangıç pozisyonu
+var position = 0;
+
+// Hareket fonksiyonu
+function moveImages() {
+  position += speed;
+  images.forEach(function(image, index) {
+    companyLogos.style.transform = `translateX(${-position}px)`;
+    if (position > image.offsetWidth * (index + 1.1)) {
+      position = 0;
+      var firstImage = document.querySelector(".company-logos img:first-child");
+      firstImage.remove();
+      companyLogos.appendChild(firstImage);
+    }
+  });
+  requestAnimationFrame(moveImages);
+}
+
+moveImages();
