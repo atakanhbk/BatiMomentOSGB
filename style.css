@@ -321,6 +321,7 @@ nav {
 
 .online-process > h1 {
   margin: 2.5rem 0px;
+  font-size: 1.5rem;
 }
 
 .online-process > ul {
@@ -486,6 +487,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#references > h1 {
+  margin: 3rem;
 }
 
 .companies {
