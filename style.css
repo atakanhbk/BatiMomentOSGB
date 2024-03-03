@@ -489,7 +489,7 @@ h1 {
 }
 
 .companies {
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -504,9 +504,12 @@ h1 {
 }
 
 .company-logos > img {
-  border: 1px solid black;
-  aspect-ratio: 1 / 1;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  object-fit: contain;
+  aspect-ratio: 1;
 }
+
 
 @media only screen and (max-width: 720px) {
   .header-upline {
