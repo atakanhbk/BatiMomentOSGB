@@ -107,7 +107,7 @@ var position = 0;
 // Hareket fonksiyonu
 function moveImages() {
   position += speed;
-  images.forEach(function(image, index) {
+  images.forEach(function (image, index) {
     companyLogos.style.transform = `translateX(${-position}px)`;
     if (position > image.offsetWidth * (index + 1.1)) {
       position = 0;
@@ -120,3 +120,18 @@ function moveImages() {
 }
 
 moveImages();
+
+// Popup'u açma fonksiyonu
+function openPopup() {
+   if(sessionStorage.getItem("isVisited") === null){
+    document.getElementById("popup").style.display = "block";
+    sessionStorage.setItem("isVisited","yes");
+   }
+}
+
+// Popup'u kapatma fonksiyonu
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+window.addEventListener("load",openPopup);
